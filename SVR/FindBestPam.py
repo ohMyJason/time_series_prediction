@@ -1,5 +1,5 @@
 
-import SVM.svmprediction as sv
+import SVR.svmprediction as sv
 
 data,value = sv.read_csv("../data/testData.csv")
 

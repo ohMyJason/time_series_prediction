@@ -1,4 +1,4 @@
-import SVM.svmprediction as sv
+import SVR.svmprediction as sv
 from matplotlib import pyplot as plt
 
 data,value = sv.read_csv("../data/testData.csv")
@@ -29,6 +29,7 @@ def testGamma(c):
         print("mse = %.3f" %mse)
         gammas.append(gamma)
         mses.append(mse)
+
     plt.plot(gammas, mses)
     # plt.axis([0, 9, 0, 30])
     plt.xlabel('Gamma')

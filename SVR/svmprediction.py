@@ -73,7 +73,7 @@ def svm_timeseries_prediction(data,value,c_parameter,gamma_paramenter):
 
 data,value = read_csv('../data/testData.csv')
 '''样本归一化处理'''
-# value=preprocessing.scale(value)
+value=preprocessing.scale(value)
 
 X_data,Y_data,X_prediction,y_prediction,error,mse = svm_timeseries_prediction(data,value,9,9)
 print("mse : %.3f"%mse)
