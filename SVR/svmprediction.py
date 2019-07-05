@@ -6,16 +6,11 @@ from sklearn import preprocessing
 import pandas as pd
 from sklearn.metrics import mean_squared_error
 
-def read_csv(path):
-    csv_data = pd.read_csv(path)  # 读取训练数据
-    data=[]
-    value = []
-    for i in range(0,csv_data.data.size):
-        data.append(i)
-        value.append(csv_data.value[i])
-    return data,value
+from DataPre_util.readCsv import read_csv
 
+from DataPre_util import  ch
 
+ch.set_ch()
 
 
 
@@ -26,7 +21,7 @@ def svm_timeseries_prediction(data,value,c_parameter,gamma_paramenter):
     # 整个数据的长度
     long = len(X_data)
     # 取前多少个X_data预测下一个数据
-    X_long = 3
+    X_long = 200
     error = []   #用于存储错误数据
     svr_rbf = SVR(kernel='rbf', C=c_parameter, gamma=gamma_paramenter)
     # svr_rbf = SVR(kernel='rbf', C=1e5, gamma=1e1)
@@ -44,7 +39,7 @@ def svm_timeseries_prediction(data,value,c_parameter,gamma_paramenter):
     # print(Y[:-long_predict])
     # print("-------")
     svr_rbf=svr_rbf.fit(X[:], Y[:])
-    y_rbf = svr_rbf.predict(X[30:len(X)])
+    y_rbf = svr_rbf.predict(X[3500:len(X)])
     # print(y_rbf)
     #X[:-long_predict] ：取从开始到 len_predict的值。
     # print("---")
@@ -71,17 +66,18 @@ def svm_timeseries_prediction(data,value,c_parameter,gamma_paramenter):
     return X_data,Y_data,X_data[X_long+1:],y_rbf,error,mse
 
 
-data,value = read_csv('../data/testData.csv')
-'''样本归一化处理'''
-value=preprocessing.scale(value)
-
-X_data,Y_data,X_prediction,y_prediction,error,mse = svm_timeseries_prediction(data,value,9,9)
-print("mse : %.3f"%mse)
-figure = plt.figure()
-tick_plot = figure.add_subplot(1, 1, 1)
-tick_plot.plot(X_data, Y_data, label='data', color='green', linestyle='-')
-# tick_plot.axvline(x=X_data[-long_predict], alpha=0.2, color='gray')
-tick_plot.plot(X_prediction[30:len(X_data)], y_prediction, label='data', color='red', linestyle='--')
-# tick_plot = figure.add_subplot(2, 1, 2)
-# tick_plot.plot(X_prediction,error)
-plt.show()
+# data,value = read_csv('../data/PRSA_data_ff.csv')
+# '''样本归一化处理'''
+# value=preprocessing.scale(value)
+#
+# X_data,Y_data,X_prediction,y_prediction,error,mse = svm_timeseries_prediction(data,value,9,9)
+# print("mse : %.3f"%mse)
+# figure = plt.figure()
+# tick_plot = figure.add_subplot(1, 1, 1)
+# tick_plot.plot(X_data, Y_data, label='真实值', color='green', linestyle='-')
+# # tick_plot.axvline(x=X_data[-long_predict], alpha=0.2, color='gray')
+# tick_plot.plot(X_prediction[3500:len(X_data)], y_prediction, label='拟合值', color='red', linestyle='--')
+# plt.legend()
+# # tick_plot = figure.add_subplot(2, 1, 2)
+# # tick_plot.plot(X_prediction,error)
+# plt.show()

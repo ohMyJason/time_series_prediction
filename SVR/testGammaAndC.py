@@ -1,7 +1,10 @@
 import SVR.svmprediction as sv
 from matplotlib import pyplot as plt
+from sklearn import preprocessing
 
-data,value = sv.read_csv("../data/testData.csv")
+
+data,value = sv.read_csv("../data/PRSA_data_ff.csv")
+value = preprocessing.scale(value)
 
 def testC(gamma):
     print("when Gamma=%d "%gamma)
@@ -11,8 +14,9 @@ def testC(gamma):
         X_data, Y_data, X_prediction, y_prediction, error, mse = sv.svm_timeseries_prediction(data, value, gamma, c)
         print("C= %.3f" %c)
         cs.append(c)
-        print("mse = %.3f" %mse)
         mses.append(mse)
+        print("mse")
+        print(mse)
     plt.plot(cs,mses)
     # plt.axis([0,9,10,30])
     plt.xlabel('C')
@@ -26,7 +30,8 @@ def testGamma(c):
     for gamma in range(1,10):
         X_data, Y_data, X_prediction, y_prediction, error, mse = sv.svm_timeseries_prediction(data, value, gamma, c)
         print("Gamma= %d" %gamma)
-        print("mse = %.3f" %mse)
+        print("mse")
+        print(mse)
         gammas.append(gamma)
         mses.append(mse)
 
@@ -36,5 +41,5 @@ def testGamma(c):
     plt.ylabel('MSE')
     plt.show()
 
-# testC(10)
+# testC(1)
 testGamma(100)

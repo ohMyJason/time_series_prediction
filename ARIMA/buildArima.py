@@ -49,7 +49,7 @@ def evaluate_models(dataset, p_values, d_values, q_values):
 def parser(x):
     return datetime.strptime(x, '%Y/%m/%d')
 
-series = read_csv('../data/testData.csv', header=0, parse_dates=[0], index_col=0, squeeze=True, date_parser=parser)
+series = read_csv('../data/PRSA_data_ff.csv', header=0, parse_dates=[0], index_col=0, squeeze=True)
 
 '''通过AIC准则寻找最优参'''
 def findC(series):

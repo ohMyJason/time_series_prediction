@@ -1,24 +1,18 @@
-from pandas import read_csv
 from pandas import datetime
 from matplotlib import pyplot
-
+from SVR.svmprediction import read_csv
 def set_ch():
 	from pylab import mpl
 	mpl.rcParams['font.sans-serif'] = ['FangSong'] # 指定默认字体
 	mpl.rcParams['axes.unicode_minus'] = False # 解决保存图像是负号'-'显示为方块的问题
-
-
 def parser(x):
     return datetime.strptime(x, '%Y/%m/%d')
-
-
 set_ch()
 
-series = read_csv('../data/testData.csv', header=0, parse_dates=[0], index_col=0, squeeze=True, date_parser=parser)
-print(series.head())
-series.plot()
-pyplot.xlabel('日期')
-pyplot.ylabel('日销量（件）')
+series,value = read_csv('../data/PRSA_data_ff.csv')
+pyplot.plot(series,value)
+pyplot.xlabel('time')
+pyplot.ylabel('PM2.5')
 pyplot.show()
 '''output
 data

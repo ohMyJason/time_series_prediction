@@ -18,23 +18,23 @@ set_ch()
 def parser(x):
     return datetime.strptime(x, '%Y/%m/%d')
 
-series = read_csv('../data/testData.csv', header=0, parse_dates=[0], index_col=0, squeeze=True, date_parser=parser)
+series = read_csv('../data/PRSA_data_ff.csv', header=0, parse_dates=[0], index_col=0, squeeze=True)
 X = series.values
 X=preprocessing.scale(X)
-size = 30  #取前30个数据作训练
+size = 3500  #取前30个数据作训练
 train, test = X[0:size], X[size:len(X)]
 history = [x for x in train]
 predictions = list()
 
 for t in range(len(test)):
-    model = ARIMA(history, order=(2, 0, 0))
+    model = ARIMA(history, order=(7, 0, 5))
     model_fit = model.fit(disp=0)
     output = model_fit.forecast()
     yhat = output[0]
     predictions.append(yhat)
     obs = test[t]
     history.append(obs)
-    print('predicted=%f, expected=%f' % (yhat, obs))
+    # print('predicted=%f, expected=%f' % (yhat, obs))
 
 error = mean_squared_error(test, predictions)
 print('Test MSE: %.3f' % error)
@@ -44,8 +44,8 @@ print('Test MSE: %.3f' % error)
 pyplot.figure(figsize=(12,6))
 pyplot.plot(test,color='blue',label="实际值")
 pyplot.plot(predictions, color='red',label="预测值")
-pyplot.xlabel('天数')
-pyplot.ylabel('日销量（件）')
+pyplot.xlabel('time')
+pyplot.ylabel('PM2.5指数')
 pyplot.legend()
 pyplot.show()
 

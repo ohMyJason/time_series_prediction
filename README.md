@@ -2,16 +2,21 @@
 
 ## How to run
 
+
 -testModel.py
+
 启动ARIMA部分
 
+
 - svmprediction.py
+
 启动SVR部分
 
 
 ## Code explain
 
 ### ARIMA部分
+
 - acf_pacf.py
 用于计算自相关系数与偏自相关系数
 - buildArima.py
@@ -36,5 +41,6 @@
 用于数据的adf平稳性检验
 - ch.py
 用于解决画图中的中文乱码问题
-
+- readCsv.py
+用于读取数据
 

@@ -10,6 +10,6 @@ def parser(x):
 
 
 '''对时间序列ADF检验'''
-train=read_csv('../data/testData.csv', header=0, parse_dates=[0], index_col=0, squeeze=True, date_parser=parser)
+train=read_csv('../data/PRSA_data_ff.csv', header=0, parse_dates=[0], index_col=0, squeeze=True)
 result = ts.adfuller(train, 1)
 print(result)
