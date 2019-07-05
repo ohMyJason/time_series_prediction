@@ -3,13 +3,12 @@
 ## How to run
 
 
--testModel.py
+- testModel.py
 
 启动ARIMA部分
 
 
 - svmprediction.py
-
 启动SVR部分
 
 
@@ -24,7 +23,7 @@
 - dataPreTest.py
 用于做数据的查看，画出数据散点图
 - testModel.py
-用于预测后40数据，并利用真实的数据与预测数据计算mse值
+用于预测后2606个数据，并利用真实的数据与预测数据计算mse值
 -CompareParm.py
 用于比较三组候选参数的军方误差
 
@@ -32,7 +31,7 @@
 - FindBestPam.py
 找出最佳的参数
 - svmprediction.py
-建立模型并预测预测后40数据，并利用真实的数据与预测数据计算mse值
+建立模型并预测预测后2606数据，并利用真实的数据与预测数据计算mse值
 - testGammaAndC.py
 用于SVR中gamma参数与C参数的探究
 
