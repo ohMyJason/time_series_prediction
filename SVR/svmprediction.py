@@ -66,18 +66,18 @@ def svm_timeseries_prediction(data,value,c_parameter,gamma_paramenter):
     return X_data,Y_data,X_data[X_long+1:],y_rbf,error,mse
 
 
-# data,value = read_csv('../data/PRSA_data_ff.csv')
-# '''样本归一化处理'''
-# value=preprocessing.scale(value)
-#
-# X_data,Y_data,X_prediction,y_prediction,error,mse = svm_timeseries_prediction(data,value,9,9)
-# print("mse : %.3f"%mse)
-# figure = plt.figure()
-# tick_plot = figure.add_subplot(1, 1, 1)
-# tick_plot.plot(X_data, Y_data, label='真实值', color='green', linestyle='-')
-# # tick_plot.axvline(x=X_data[-long_predict], alpha=0.2, color='gray')
-# tick_plot.plot(X_prediction[3500:len(X_data)], y_prediction, label='拟合值', color='red', linestyle='--')
-# plt.legend()
-# # tick_plot = figure.add_subplot(2, 1, 2)
-# # tick_plot.plot(X_prediction,error)
-# plt.show()
+data,value = read_csv('../data/PRSA_data_ff.csv')
+'''样本归一化处理'''
+value=preprocessing.scale(value)
+
+X_data,Y_data,X_prediction,y_prediction,error,mse = svm_timeseries_prediction(data,value,49,49)
+print("mse : %.3f"%mse)
+figure = plt.figure()
+tick_plot = figure.add_subplot(1, 1, 1)
+tick_plot.plot(X_data, Y_data, label='真实值', color='green', linestyle='-')
+# tick_plot.axvline(x=X_data[-long_predict], alpha=0.2, color='gray')
+tick_plot.plot(X_prediction[3500:len(X_data)], y_prediction, label='拟合值', color='red', linestyle='--')
+plt.legend()
+# tick_plot = figure.add_subplot(2, 1, 2)
+# tick_plot.plot(X_prediction,error)
+plt.show()

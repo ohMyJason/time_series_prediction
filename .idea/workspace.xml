@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/SVR/FindBestPam.py" line="9" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="06d55c50-ab58-4120-8995-20fa22b86082" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/~$课程设计报告.docx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SVR/FindBestPam.py" afterPath="$PROJECT_DIR$/SVR/FindBestPam.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SVR/svmprediction.py" afterPath="$PROJECT_DIR$/SVR/svmprediction.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,8 +56,8 @@
       <file leaf-file-name="FindBestPam.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SVR/FindBestPam.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+            <state relative-caret-position="625">
+              <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
               <folding>
                 <element signature="e#1#56#0" expanded="true" />
               </folding>
@@ -74,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="svmprediction.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="svmprediction.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SVR/svmprediction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1068">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="72" column="90" lean-forward="true" selection-start-line="72" selection-start-column="90" selection-end-line="72" selection-end-column="90" />
               <folding>
                 <element signature="e#1#19#0" expanded="true" />
               </folding>
@@ -86,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
+            <state relative-caret-position="-542">
               <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
               <folding />
             </state>
@@ -151,11 +154,11 @@
         <option value="$PROJECT_DIR$/DataPre_util/adf.py" />
         <option value="$PROJECT_DIR$/ARIMA/buildArima.py" />
         <option value="$PROJECT_DIR$/ARIMA/CompareParm.py" />
-        <option value="$PROJECT_DIR$/SVR/svmprediction.py" />
         <option value="$PROJECT_DIR$/ARIMA/testModel.py" />
-        <option value="$PROJECT_DIR$/SVR/FindBestPam.py" />
         <option value="$PROJECT_DIR$/SVR/testGammaAndC.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/SVR/FindBestPam.py" />
+        <option value="$PROJECT_DIR$/SVR/svmprediction.py" />
       </list>
     </option>
   </component>
@@ -236,7 +239,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.FindBestPam">
+  <component name="RunManager" selected="Python.svmprediction">
     <configuration name="CompareParm" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -271,19 +274,19 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="buildArima" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="svmprediction" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ARIMA" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SVR" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="time_series_prediction" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ARIMA/buildArima.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SVR/svmprediction.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -323,19 +326,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.buildArima" />
-      <item index="1" class="java.lang.String" itemvalue="Python.CompareParm" />
-      <item index="2" class="java.lang.String" itemvalue="Python.testModel" />
-      <item index="3" class="java.lang.String" itemvalue="Python.testGammaAndC" />
-      <item index="4" class="java.lang.String" itemvalue="Python.FindBestPam" />
+      <item index="0" class="java.lang.String" itemvalue="Python.CompareParm" />
+      <item index="1" class="java.lang.String" itemvalue="Python.testModel" />
+      <item index="2" class="java.lang.String" itemvalue="Python.testGammaAndC" />
+      <item index="3" class="java.lang.String" itemvalue="Python.FindBestPam" />
+      <item index="4" class="java.lang.String" itemvalue="Python.svmprediction" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.FindBestPam" />
-        <item index="1" class="java.lang.String" itemvalue="Python.testGammaAndC" />
-        <item index="2" class="java.lang.String" itemvalue="Python.testModel" />
-        <item index="3" class="java.lang.String" itemvalue="Python.CompareParm" />
-        <item index="4" class="java.lang.String" itemvalue="Python.buildArima" />
+        <item index="0" class="java.lang.String" itemvalue="Python.svmprediction" />
+        <item index="1" class="java.lang.String" itemvalue="Python.FindBestPam" />
+        <item index="2" class="java.lang.String" itemvalue="Python.testGammaAndC" />
+        <item index="3" class="java.lang.String" itemvalue="Python.testModel" />
+        <item index="4" class="java.lang.String" itemvalue="Python.CompareParm" />
       </list>
     </recent_temporary>
   </component>
@@ -354,12 +357,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="2582" height="1062" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16953126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2362822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2362822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -757,32 +759,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SVR/svmprediction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1068">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SVR/testGammaAndC.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="925">
           <caret line="37" column="15" lean-forward="true" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVR/FindBestPam.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding>
-            <element signature="e#1#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -797,9 +779,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
+        <state relative-caret-position="-542">
           <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVR/FindBestPam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding>
+            <element signature="e#1#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVR/svmprediction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="72" column="90" lean-forward="true" selection-start-line="72" selection-start-column="90" selection-end-line="72" selection-end-column="90" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

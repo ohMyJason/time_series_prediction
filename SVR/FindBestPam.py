@@ -6,8 +6,9 @@ data,value = read_csv("../data/PRSA_data_ff.csv")
 
 value=preprocessing.scale(value)
 temp_mse = 10000  #mse初始值 默认无限大
-c_weight = range(90,100)  #c的取值范围
-gamma_weight = range(90,100) #gamma的取值范围
+c_weight = range(1,50)  #c的取值范围
+gamma_weight = range(1,50) #gamma的取值范围
+
 
 for c_paramenter in c_weight:
     for gamma_paramenter in gamma_weight:
